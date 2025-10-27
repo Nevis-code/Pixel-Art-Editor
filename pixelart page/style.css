@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #b6b4b4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    image-rendering: pixelated;
+    display: block;
+}
+
+.palette {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#paletteColors, #recentColors {
+    display: flex;
+    gap: 10px;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.zoom-controls {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#eraserButton.active {
+    background-color: #ff4444;
+}
+
+#fillButton.active {
+    background-color: #4444ff; /* Bleu quand le mode remplir est actif */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#eraserButton:hover {
+    background-color: #cc0000;
+}
+
+#fillButton:hover {
+    background-color: #3333cc;
+}
